@@ -26,7 +26,7 @@ function PlayerService:load(player: Player)
 	playerDisconnectFunctions.profileStoreDisconnectFunction = profileStoreDisconnectFunction
 
 	-- DataService
-	playerDisconnectFunctions.dataServiceDisconnectFunction = self.DataService:connectProfile(player, profile.Data)
+	playerDisconnectFunctions.dataServiceDisconnectFunction = self.DataService:ConnectProfile(player, profile.Data)
 
 	-- Gamepasses
 	self.MonetizationService:loadGamepasses(player)
